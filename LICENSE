@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Wdnl_Joufy
+Copyright (c) 2026 cachereach contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,55 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+SCOPE AND PRIVACY NOTICE  /  适用范围与隐私声明
+
+What this tool does
+  cachereach reads localStorage data that web browsers store on YOUR OWN
+  computer, and exports it to files you choose. It is intended to recover
+  your own data - for example game progress that lives only in the browser,
+  or data you need before switching machines or a service shutting down.
+
+  本工具仅从你自己的电脑上读取浏览器保存的 localStorage 数据，
+  并导出到你指定的文件。用于恢复你自己的数据，例如仅存在于浏览器中的
+  游戏存档，或在换机、服务停服前抢救数据。
+
+Data it can read
+  Web pages may store login tokens, session identifiers, preferences and
+  other content in localStorage. Because this tool reads localStorage
+  generically, exported files MAY CONTAIN SUCH DATA for the sites you have
+  visited. Treat exported files as sensitive.
+
+  网页可能在 localStorage 中保存登录令牌、会话标识、偏好设置等内容。
+  本工具是通用读取，因此导出文件可能包含你访问过的站点的此类数据。
+  请将导出文件视为敏感文件妥善保管。
+
+Guarantees
+  - Read-only. The tool never writes to, modifies or deletes any browser
+    file. Browser data is copied to a temporary directory only when a
+    database is locked by a running browser; the copy is deleted afterwards.
+  - No network access. The tool makes no outbound requests and contains no
+    analytics, telemetry or update checks.
+  - No bundled third-party code. The optional Node.js backend requires the
+    'classic-level' package to be installed separately at runtime; it is not
+    distributed with this project.
+
+  - 只读：绝不写入、修改或删除任何浏览器文件。仅在数据库被运行中的浏览器
+    锁定时才会复制一份到临时目录，用完即删。
+  - 无网络访问：不含任何对外请求、遥测或更新检查。
+  - 不含第三方代码：可选的 Node 后端需自行安装 classic-level，本项目不分发它。
+
+Responsibility
+  Only process browsers and data that belong to you. Analysing someone
+  else's browser data may be unlawful in your jurisdiction and can expose
+  their accounts and personal information.
+
+  请仅处理属于你自己的浏览器与数据。分析他人的浏览器数据在许多地区可能
+  违法，且会暴露其账号与个人信息。
+
+Official game data
+  This project contains no game assets. Games and their assets remain the
+  property of their respective rights holders.
+  本项目不含任何游戏素材，游戏及其素材的版权归各自权利人所有。
