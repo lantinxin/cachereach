@@ -1,6 +1,12 @@
-@echo off
-rem cachereach Æô¶¯Æ÷£¨ÓÉ setup.py Éú³É£©
-cd /d "%~dp0"
-set "PY=C:\Users\fylqjzh\WorkBuddy\2026-10-18-16-56-26\tools\.venv\Scripts\python.exe"
-if not exist "%PY%" set "PY=python"
-"%PY%" cachereach.py %*
+@echo off
+
+rem cachereachå¯åŠ¨å™¨(ç”± setup.py ç”Ÿæˆ)
+
+cd /d "%~dp0"
+
+set "PY=C:\Users\fylqjzh\WorkBuddy\2026-10-18-16-56-26\tools\.venv\Scripts\python.exe"
+
+if not exist "%PY%" set "PY=python"
+
+"%PY%" cachereach.py %*
+
