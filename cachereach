@@ -1,6 +1,0 @@
-#!/bin/sh
-# cachereach 启动器（由 setup.py 生成）
-cd "$(dirname "$0")" || exit 1
-PY="C:\Users\fylqjzh\WorkBuddy\2026-10-18-16-56-26\tools\.venv\Scripts\python.exe"
-[ -x "$PY" ] || PY=python3
-exec "$PY" cachereach.py "$@"
